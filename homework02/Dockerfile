@@ -13,6 +13,6 @@ COPY test_read_animals.py /code/test_read_animals.py
 
 RUN chmod +rx /code/generate_animals.py && \
     chmod +rx /code/read_animals.py && \
-    chmod +rx /code/test_read_animals.py
+    chmod +rx /code/test_read_animals.py  
 
 ENV PATH "/code:$PATH"
