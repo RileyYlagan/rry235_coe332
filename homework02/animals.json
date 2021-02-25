@@ -1,0 +1,144 @@
+{
+  "animals": [
+    {
+      "head": "snake",
+      "body": "badger-satyr",
+      "arms": 2,
+      "legs": 3,
+      "tails": 5
+    },
+    {
+      "head": "lion",
+      "body": "condor-ram",
+      "arms": 6,
+      "legs": 6,
+      "tails": 12
+    },
+    {
+      "head": "bull",
+      "body": "crab-mayfly",
+      "arms": 10,
+      "legs": 3,
+      "tails": 13
+    },
+    {
+      "head": "raven",
+      "body": "perch-camel",
+      "arms": 4,
+      "legs": 12,
+      "tails": 16
+    },
+    {
+      "head": "bull",
+      "body": "mayfly-cat",
+      "arms": 6,
+      "legs": 6,
+      "tails": 12
+    },
+    {
+      "head": "raven",
+      "body": "goblin-cattle",
+      "arms": 10,
+      "legs": 6,
+      "tails": 16
+    },
+    {
+      "head": "bunny",
+      "body": "piglet-donkey",
+      "arms": 6,
+      "legs": 6,
+      "tails": 12
+    },
+    {
+      "head": "lion",
+      "body": "mammal-mullet",
+      "arms": 4,
+      "legs": 3,
+      "tails": 7
+    },
+    {
+      "head": "snake",
+      "body": "shad-hen",
+      "arms": 10,
+      "legs": 3,
+      "tails": 13
+    },
+    {
+      "head": "bull",
+      "body": "yeti-deer",
+      "arms": 12,
+      "legs": 3,
+      "tails": 15
+    },
+    {
+      "head": "snake",
+      "body": "oyster-yak",
+      "arms": 2,
+      "legs": 3,
+      "tails": 5
+    },
+    {
+      "head": "bull",
+      "body": "eagle-bass",
+      "arms": 8,
+      "legs": 9,
+      "tails": 17
+    },
+    {
+      "head": "raven",
+      "body": "mayfly-mite",
+      "arms": 6,
+      "legs": 3,
+      "tails": 9
+    },
+    {
+      "head": "lion",
+      "body": "hound-seal",
+      "arms": 2,
+      "legs": 3,
+      "tails": 5
+    },
+    {
+      "head": "raven",
+      "body": "amoeba-hawk",
+      "arms": 10,
+      "legs": 9,
+      "tails": 19
+    },
+    {
+      "head": "bunny",
+      "body": "molly-husky",
+      "arms": 12,
+      "legs": 6,
+      "tails": 18
+    },
+    {
+      "head": "raven",
+      "body": "loon-colt",
+      "arms": 4,
+      "legs": 3,
+      "tails": 7
+    },
+    {
+      "head": "lion",
+      "body": "perch-zebra",
+      "arms": 10,
+      "legs": 6,
+      "tails": 16
+    },
+    {
+      "head": "snake",
+      "body": "bass-bengal",
+      "arms": 8,
+      "legs": 12,
+      "tails": 20
+    },
+    {
+      "head": "lion",
+      "body": "guinea-snake",
+      "arms": 2,
+      "legs": 12,
+      "tails": 14
+    }
+  ]
+}
