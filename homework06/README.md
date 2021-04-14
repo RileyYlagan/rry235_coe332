@@ -55,7 +55,7 @@ root@py-debug-deployment-5cc8cdd65f-6wb6h:/#
 ### Install redis and curl - 
 ```bash
 root@py-debug-deployment-5cc8cdd65f-6wb6h:/# pip install redis
-root@py-debug-deployment-5cc8cdd65f-6wb6h:/#apt-get update && apt-get install -y curl
+root@py-debug-deployment-5cc8cdd65f-6wb6h:/# apt-get update && apt-get install -y curl
 ```
 ### Curl the IP of you flask service from above and use the routes - 
 ```bash
