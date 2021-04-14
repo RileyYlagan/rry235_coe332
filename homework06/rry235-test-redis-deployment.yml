@@ -1,0 +1,34 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rry235-test-redis-deployment
+  labels:
+    app: rry235-test-redis
+    username: rry235
+    env: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rry235-test-redis
+  template:
+    metadata:
+      labels:
+        app: rry235-test-redis
+        username: rry235
+        env: test
+    spec:
+      containers:
+        - name: redis-container
+          image: redis:5.0.0
+          volumeMounts:
+          - name: rry235-test-data
+            mountPath: "/data"
+          ports:
+            - name: redis
+              containerPort: 6379
+      volumes:
+      - name: rry235-test-data
+        persistentVolumeClaim:
+          claimName: rry235-test-data

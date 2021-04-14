@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rry235-test-flask-service
+  labels:
+    username: rry235
+    env: test
+spec:
+  type: ClusterIP
+  selector:
+    username: rry235
+    env: test
+    app: rry235-test-flask
+  ports:
+  - name: flask
+    port: 5000
+    targetPort: 5000

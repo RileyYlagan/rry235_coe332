@@ -1,0 +1,33 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rry235-test-flask-deployment
+  labels:
+    app: rry235-test-flask
+    username: rry235
+    env: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: rry235-test-flask
+  template:
+    metadata:
+      labels:
+        app: rry235-test-flask
+        username: rry235
+        env: test
+    spec:
+      containers:
+        - name: rry235-test-flask
+          imagePullPolicy: Always
+          image: rileyylagan/coe332-animals:latest
+          ports:
+            - name: flask
+              containerPort: 5000
+          env: 
+            - name: "RD_HOST"
+              value: "10.99.18.166"
+          
+          
