@@ -18,11 +18,10 @@ NAME                        TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    
 rry235-test-flask-service   ClusterIP   10.99.60.135   <none>        5000/TCP   7s
 rry235-test-redis-service   ClusterIP   10.99.18.166   <none>        6379/TCP   12s
 ```
-#### Change the value of RD_HOST in app.py to the IP from above. In this case it would be `10.99.18.166`.
+#### Change the value of RD_HOST in `rry235-test-flask-deployment.yml` to the IP from above. In this case it would be `10.99.18.166`.
 
 ```bash
-$ cd web
-$ vim app.py
+$ vim rry235-test-flask-deployment.yml
 ```
 ### Start the Deployments - 
 ```bash
