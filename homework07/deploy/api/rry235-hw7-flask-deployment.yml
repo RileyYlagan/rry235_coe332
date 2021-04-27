@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rry235-hw7-flask-deployment
+  labels:
+    app: rry235-hw7-flask
+    username: rry235
+    env: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rry235-hw7-flask
+  template:
+    metadata:
+      labels:
+        app: rry235-hw7-flask
+        username: rry235
+        env: test
+    spec:
+      containers:
+        - name: rry235-hw7-flask
+          imagePullPolicy: Always
+          image: rileyylagan/coe332-api:latest
+          ports:
+            - name: flask
+              containerPort: 5000

@@ -1,0 +1,4 @@
+Flask==1.1.2
+hotqueue==0.2.8
+redis==3.5.3
+petname==2.6
