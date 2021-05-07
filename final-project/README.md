@@ -152,8 +152,7 @@ One way to interact with the API is through curling routes in a python-debug con
     ``` 
 - This example will put the image into output.png in your container. This can be copied onto your device use `kubectl cp`
 
-Another way to interact with the API is through an outside NodePort service. Navigate to `https://isp-proxy.tacc.utexas.edu/rry235/ ` which can be used to print information and display the image. 
+Another way to interact with the API is through an outside NodePort service. Navigate to `https://isp-proxy.tacc.utexas.edu/rry235/ ` which can be used to print information and download the image. For this, run the job in the python -debug container, then list the job in the browser and use the output to get the id to download the image from the job. 
 
-<b>Note:</b> My port in nginx currently needs to be reset/remapped, will update when possible.
 
 
