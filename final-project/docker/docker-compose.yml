@@ -1,0 +1,23 @@
+---
+    version: '3'
+    services:
+        rry235final-db:
+            image: rileyylagan/rry235final-app-db:${VER}
+            container_name: rry235final-db
+            ports:
+                - 6419:6379
+            user: "869725:816966"
+            volumes:
+                - ../data/:/data/
+        rry235final-api:
+            image: rileyylagan/rry235final-app-api:${VER}
+            container_name: rry235final-api
+            environment:
+                - REDIS_IP=rry235final-db
+            ports:
+                - 5039:5000
+        rry235final-wrk:
+            image: rileyylagan/rry235final-app-wrk:${VER}
+            container_name: rry235final-wrk
+            environment:
+                - REDIS_IP=rry235final-db

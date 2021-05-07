@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rry235final-prod-db-deployment
+  labels:
+    app: rry235final-prod-db
+    env: prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rry235final-prod-db
+  template:
+    metadata:
+      labels:
+        app: rry235final-prod-db
+        env: prod
+    spec:
+      containers:
+        - name: rry235final-prod-db
+          image: rileyylagan/rry235final-app-db:${TAG}
+          imagePullPolicy: Always
+          command: ["redis-server"]
+          volumeMounts:
+          - name: rry235final-prod-db-pvc
+            mountPath: "/data"
+      volumes:
+      - name: rry235final-prod-db-pvc
+        persistentVolumeClaim:
+          claimName: rry235final-prod-db-pvc
+...

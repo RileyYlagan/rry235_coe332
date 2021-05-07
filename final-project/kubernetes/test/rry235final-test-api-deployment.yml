@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rry235final-test-api-deployment
+  labels:
+    app: rry235final-test-api
+    env: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rry235final-test-api
+  template:
+    metadata:
+      labels:
+        app: rry235final-test-api
+        env: test
+    spec:
+      containers:
+        - name: rry235final-test-api
+          image: rileyylagan/rry235final-app-api:${TAG}
+          imagePullPolicy: Always
+          env:
+          - name: REDIS_IP
+            value: 10.98.12.38 
+          ports:
+          - name: http
+            containerPort: 5000
+...

@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rry235final-test-wrk-deployment
+  labels:
+    app: rry235final-test-wrk
+    env: test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rry235final-test-wrk
+  template:
+    metadata:
+      labels:
+        app: rry235final-test-wrk
+        env: test
+    spec:
+      containers:
+        - name: rry235final-test-wrk
+          image: rileyylagan/rry235final-app-wrk:${TAG}
+          imagePullPolicy: Always
+          env:
+          - name: REDIS_IP
+            value: 10.98.12.38
+...

@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rry235final-prod-db-service
+  labels:
+    env: prod
+spec:
+  type: ClusterIP
+  selector:
+    app: rry235final-prod-db
+  ports:
+  - name: redis-port
+    port: 6379
+    targetPort: 6379
+...
